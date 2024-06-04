@@ -135,15 +135,19 @@ Para iniciar a aplicação Spring Boot, siga estas etapas:
 
 ## Estrutura do projeto frontend
 
-Adicionar itens na lista pedidos e finalizar pedido.
+Adicionar itens na lista pedidos.
 
-![Design sem nome-2](https://github.com/ceerqueira/papelaria/assets/50030996/0208f32a-5f29-4c19-9ab9-8fb81101dafd)
+![lista-produtos](https://github.com/ceerqueira/pedido/assets/50030996/12e4a27f-0e87-42bf-827f-d3c690866049)
+
+finalizar pedido.
+
+![finalizar-pedido](https://github.com/ceerqueira/pedido/assets/50030996/9d4ba696-b820-4465-b4d6-e03678fd51d7)
 
 Buscar pedido.
 
-![Design sem nome](https://github.com/ceerqueira/papelaria/assets/50030996/35eae5f2-6fcf-44af-95fd-857739161168)
-
 Para buscar todos os pedidos basta apertar em buscar sem o código de acesso
+
+https://github.com/ceerqueira/pedido/assets/50030996/c856d158-61f3-48f5-a3c7-deebaea8a3b2
 
 
 
