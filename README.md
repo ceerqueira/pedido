@@ -1,6 +1,6 @@
 # Aplicação Fullstack com React e Spring Boot - Java
 
-Um projeto para fornecer aos funcionários de uma papelaria o controle do estoque, fazer pedidos e buscar os pedidos feitos pelo código de acesso ao pedido.
+Um projeto para que visa o usuario realizar pedidos e buscar os pedidos feitos.
 
 Este é um guia de documentação para o projeto usando React e Java.
 
