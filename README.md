@@ -60,16 +60,18 @@ Este é um guia de documentação para o projeto usando React e Java.
 no application.properties está como consta abaixo. Verifique se o acesso ao banco de dados MySQL está com o username e password padrão:
    ```bash
       spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-      spring.datasource.url=jdbc:mysql://localhost/papelaria?createDatabaseIfNotExist=true
+      spring.datasource.url=jdbc:mysql://localhost/entrega?createDatabaseIfNotExist=true
       spring.datasource.username=root
       spring.datasource.password=root
       spring.jpa.show-sql=true
+
+      spring.jpa.hibernate.ddl-auto=update
    ```
 
 
 Utilizando o sistema de versionamento do Flyway, ele cria um databases, com três tabelas e insere 12 itens na tabela Produto.
 
-<img width="323" alt="Captura de Tela 2023-09-10 às 11 38 41" src="https://github.com/ceerqueira/papelaria/assets/50030996/10a18235-25af-4857-adda-405a9bba2032">
+<img width="299" alt="Captura de Tela 2024-06-04 às 13 29 37" src="https://github.com/ceerqueira/pedido/assets/50030996/c26efefd-c9fa-4f35-bc64-1efb81d631c5">
 
 
 - **Portas:** Certifique-se de que as portas padrão especificadas (8080 para o backend e 3000 para o frontend) não estejam sendo usadas por outros serviços em sua máquina.
@@ -81,7 +83,7 @@ Utilizando o sistema de versionamento do Flyway, ele cria um databases, com trê
 1. Clone o repositório para sua máquina local:
 
    ```bash
-   git clone https://github.com/ceerqueira/papelaria.git
+   git clone https://github.com/ceerqueira/pedido.git
    ```
 
 
@@ -140,6 +142,8 @@ Adicionar itens na lista pedidos e finalizar pedido.
 Buscar pedido.
 
 ![Design sem nome](https://github.com/ceerqueira/papelaria/assets/50030996/35eae5f2-6fcf-44af-95fd-857739161168)
+
+Para buscar todos os pedidos basta apertar em buscar sem o código de acesso
 
 
 
@@ -230,6 +234,10 @@ Esta requisição retorna a mensagem abaixo. Lembre-se de guardar o código de a
 
 Com o código de acesso é possível ter acesso aos dados do cliente e a lista de produtos selecionados.
 
+**GET** `http://localhost:8080/produtos/listar`
+
+Esta requisição retorna todos os pedidos em formato JSON que estão cadastrados no banco de dados.
+
 
 ### Itens do Carrinho (/produtos)
 
@@ -237,6 +245,7 @@ Com o código de acesso é possível ter acesso aos dados do cliente e a lista d
 **GET** `http://localhost:8080/produtos`
 
 Esta requisição retorna todos os produtos em formato JSON que estão cadastrados no banco de dados.
+
 
 
 
